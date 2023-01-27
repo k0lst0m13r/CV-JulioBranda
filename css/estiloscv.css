@@ -1,0 +1,249 @@
+/*Fuente*/
+*{font-family: 'Montserrat', sans-serif;}
+
+/*Estilos body*/
+body {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.6em;/*puse este porque estaba recomendado en w3 schools*/
+  }
+
+  /* Navbar */
+  .navbar {
+    width: 100%;
+    overflow: auto;
+  }
+  
+  /* Navbar links */
+  .navbar a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  /*estilos box-sizing*/
+  
+  
+/* Boton para abrir contact form*/
+.open-button {
+  background-color: rgb(52, 122, 56);
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 0.8;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+  
+}
+
+/* Boton x para cerrar contact form*/
+.cancel {
+  float: right;
+  cursor: pointer;
+  padding: 10px;
+  font-size: large;
+ 
+}
+
+/* Popup form - oculto por default */
+.form-popup {
+  display: none;
+  position: absolute;
+  max-width: 300px;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  box-sizing: border-box;
+}
+
+/* Estilos del form container */
+.form-container {
+  max-width: 300px;
+  padding: 5px;
+  background-color: rgb(255, 255, 255);
+}
+
+#redes div {
+  padding: 20px;
+  text-align: left;
+}
+#redes a {
+  text-decoration: none;
+}
+  
+#redes img {
+    width: 50px;
+}
+
+#redes h2, span {
+  color: black;
+} 
+
+/*etilos article*/
+article {
+    padding:0 1em;
+  }
+  
+  /*Estilos section*/
+  section{
+    margin: 0;
+    padding: 0.5em;
+  }
+  
+  /*Estilos header, main, footer*/
+  header, main, footer {
+    margin: 0 auto;
+  }
+  
+  /*Estilos header, usé una imagen de freepik* y el color que apliqué a las letras y otros detalles está en esa gama*/
+  header {
+    padding: 1em;
+    text-align: center;
+    background-color: rgb(143, 144, 145);
+    background-size: cover;
+    background-position: fixed;
+    color: white;
+  }
+  
+  /*Estilos de las secciones del header*/
+  header section {
+    margin: 0 auto;
+    max-width: 640px;
+  }
+  
+  /*Estilos para que la foto de perfil sea redonda*/
+  #header img {
+    border-radius: 50%;
+    max-width: 150px;
+  }
+  
+  /*Estilos en h1 para mayúsculas*/
+  h1 {
+    text-transform: uppercase;
+    margin: 0.5em;
+  }
+  
+  /*Estilos encabezados*/
+  h1,h3 {
+  color: black;
+  }
+  
+  /*Estilos main*/
+  main {
+    max-width: 1140px;
+  }
+  
+  /*usé border bottom para hacer la línea de separación entre secciones*/
+  main section:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+  }
+  /*estilos skills el flex wrap para que ajuste el texto*/
+  .skills {
+    display: -ms-flexbox;/*este es para internet explorer*/
+    display: flex;
+    -ms-flex-wrap: wrap;/*este es para internet explorer*/
+    flex-wrap: wrap;
+  }
+  /*estilos skills colum igual que el anterior el flex para el ajuste de texto con el ms para internet explorer*/
+  .skills .column {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  
+  /*Estilos en listas para que no tenga viñetas*/
+  .skills .column ul, ul.job-description {
+    list-style-type: none;
+  }
+  
+  /*Estilos banderita en skills*/
+  .skills .column ul > li:before {
+    content: "►";
+    padding-right: 0.5em;
+    color: rgb(52, 122, 56);
+  }
+  
+  /*Estilos para transformar a mayúscula en la clase school*/
+  .school {
+    text-transform: uppercase;
+  }
+
+  .school img {
+    width: 50px;
+  }
+  
+  .description {
+    padding-bottom: 20px;
+  }
+
+  .description a {
+    text-decoration: none;
+    color: black;
+  }
+
+  /*color en school span y job-title span*/
+  .school span, .job-title span {
+    color: rgb(52, 122, 56);
+  }
+  
+ 
+  /*Estilos footer*/
+  footer {
+   padding: 1em 1.5em;
+   background: rgb(58, 57, 57);
+   color: white;
+   text-align: right;
+  }
+  
+  /*Estilos responsive*/
+  @media only screen and (max-width: 768px) {
+    .open-button {
+      width: 100%;
+    }
+
+
+    .skills {
+      display: block;
+    }
+  
+    .skills .column {
+      max-width: 100%;
+    }
+  
+    footer {
+      text-align: center;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .open-button {
+      width: 100%;
+    }
+
+    .form-popup {
+      max-width: 60%;
+      max-height: 100%;
+      font-size: 12px;
+     }
+
+    
+    .skills {
+      display: block;
+    }
+  
+    .skills .column {
+      max-width: 100%;
+    }
+  
+    footer {
+      text-align: center;
+    }
+
+    
+  }

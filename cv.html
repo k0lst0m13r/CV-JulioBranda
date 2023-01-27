@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Julio Branda</title>
+    <!--favicon-->
+    <link rel="icon" type="image/png" href="imagenes/tux.ico">
+    <!--acá incorporé mi hoja de estilos-->
+    <link rel="stylesheet" type="text/css" href="css/estiloscv.css" />
+    <!--acá incorporé una librería para tener íconos en la navbar-->
+    <script src="https://kit.fontawesome.com/70f6da2599.js" crossorigin="anonymous"></script>
+    <!--acá incorporé la fuente de Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500&display=swap" rel="stylesheet">
+    <!-- Open Graph data -->
+    <meta property="og:title" content="CV Julio Branda" />
+    <meta property="og:type" content="Perfil" />
+    <meta property="og:url" content=" http://www.trabajofinalcv.com" />
+    <meta property="og:image" content=" https://randomuser.me/api/portraits/women/53.jpg" />
+    <meta property="og:description" content="Soy Julio Branda. Este es mi CV. Contactame!." />
+    <meta name="keywords" content="Programación ,Desarrollo web, Landing Pages, Tiendas en linea">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+    
+<body>
+    <header>
+        <!--Acá usé la barra de navegación que pedían con links a las secciones-->
+        <div class="navbar">
+          <a class="active" href="#datos"><i class="fa-solid fa-user"></i></i> Datos personales</a>
+          <a href="#experiencia"><i class="fa-solid fa-business-time"></i></i> Experiencia</a>
+          <a href="#educacion"><i class="fa-solid fa-landmark"></i></i> Educación</a>
+          <a href="#capacidades"><i class="fa-solid fa-gears"></i></i> Capacidades</a>
+        </div>
+        <!--La imagen del usuario la tomé de la web sugerida y también la usé para el favicon, la info la inventé a modo de ejemplo-->
+        <div id="header">
+          <img src="imagenes/fotocv.jpeg" />
+        </div>
+        <h1>Julio Branda</h1>
+        <section>
+          <p>Hola! Soy Programador y Desarrollador Web Junior. 
+            Me dedico a diseñar y desarrollar sitios web de manera independiente. También me apasiona compartir lo que aprendí, 
+            la colaboracíon en el desarrollo de código, el trabajo en equipo y seguir capacitándome. </p>
+        </section>
+        <!--incorporé un botón de contacto con un formulario popup-->
+        <!--botón para abrir el formulario popup-->
+        <button class="open-button" onclick="openForm()">Click para ver mis Redes</button>
+        <!--formulario popup-->
+        <div class="form-popup" id="myForm">
+          <form action="/action_page.php" class="form-container">
+            <!--botón para cerrar el form, usé una x-->
+            <button type="button" class="cancel" onclick="closeForm()"><strong>x</strong></button>
+              <div id="redes">
+                <h2>Buscame!</h2>
+                  <div>
+                    <div>
+                      <a href="https://www.linkedin.com/in/julio-branda-71a92a233/" target="_blank">                          
+                        <img src="imagenes/in.png" alt="INlogo">
+                        <span>LinkedIn</span>
+                      </a>
+                    </div>
+                    <a href="https://github.com/k0lst0m13r" target="_blank">       
+                      <div>
+                        <img src="imagenes/gh.png" alt="GHlogo">
+                        <span>GitHub</span>
+                      </div>
+                    </a>
+                    <a href="https://www.instagram.com/kolstomierdevs/" target="_blank">
+                      <div>
+                        <img src="imagenes/ig.png" alt="IGlogo">
+                        <span>Instagram</span>
+                      </div>
+                  </a>
+                  </div>
+              </div>   
+          </form>
+        </div>
+        <!--el script para abrir y cerrar el formulario usando los que aprendimos de javascript-->
+        <script>
+          function openForm() {
+          document.getElementById("myForm").style.display = "block";
+          }
+  
+          function closeForm() {
+          document.getElementById("myForm").style.display = "none";
+          }
+        </script>
+
+    </header>
+
+    <main>
+         <section>
+          <h3 id="datos">Datos Personales</h3>
+          <article>
+            <span>Nombre: </span><strong>Julio Branda</strong><br>
+            <span>Edad: </span><strong>51</strong><br>
+            <span>Ubicación: </span><strong>Buenos Aires</strong><br>
+            <span>Email: </span><strong>juliobranda@gmx.com</strong><br>
+          </article>                    
+        </section>
+        <!--En las siguientes secciones usé clases para aplicar después el css, el tag strong para el énfasis y puse listas-->
+        <section>
+            <h3 id="experiencia">Experiencia</h3>
+            <article>
+              <div class='job-title'>
+                <span>07.2020 - hasta la actualidad </span> <strong>K0lst0m13r D3vS</strong><br> 
+                <strong>Puesto:</strong> Desarrollador web
+                <p>Planifico y coordino proyectos de diseño y desarrollo web</p>
+              </div>
+              <div class='job-title'>
+                <span>05.2019 - hasta la actualidad</span> <strong>Iman Electricidad</strong><br> 
+                <strong>Puesto:</strong> Director de planificación y ejecución de proyectos.
+                <p>Coordino con les diseñadores durante la planificación y con el resto de los 
+                  gremios durante la ejeución.</p>
+              </div>
+            </article>
+        </section>
+        <!--como elementos semánticos además de nav, header, section, usé div,article y footer-->
+        <section>
+            <h3 id="educacion">Educación</h3>
+            <article>
+              <div class='school'>
+                <img src="imagenes/UA.jpeg" alt="UAlogo">
+                  <strong>Universidad Austral, Argentina </strong><span>09.2020</span>          
+              </div>
+              <div class="description">
+                <a href="https://www.coursera.org/account/accomplishments/verify/7TVHRSJ8WEJ9">Introduccion a la programación con Python</a>
+              </div>
+            </article>
+            <article>
+              <div class='school'>
+                <img src="imagenes/UA.jpeg" alt="UAlogo">
+                  <strong>Universidad Austral, Argentina </strong><span>09.2020</span>          
+              </div>
+              <div class="description">
+                <a href="https://www.coursera.org/account/accomplishments/verify/QGMKXK8DKKYE">Diseñando páginas web con Bootstrap 4</a>
+              </div>
+            </article>
+            <article>
+              <div class='school'>
+                <img src="imagenes/CF.jpeg" alt="CFlogo">
+                  <strong>Universidad Austral, Argentina </strong><span>10.2020</span>          
+              </div>
+              <div class="description">
+                <a href="imagenes/CFcert.jpg">Curso de Programación Orientada a Objetos</a>
+              </div>
+            </article>
+            <article>
+              <div class='school'>
+                <img src="imagenes/UCD.jpeg" alt="UCDlogo">
+                  <strong>University of California, Davis </strong><span>11.2020</span>          
+              </div>
+              <div class="description">
+                <a href="https://www.coursera.org/account/accomplishments/certificate/V4EUCW3R6VCJ">Introduction to Web Development</a>
+              </div>
+            </article>
+            <article>
+              <div class='school'>
+                <img src="imagenes/CH.jpeg" alt="CHlogo">
+                  <strong>Coderhouse, Argentina </strong><span>07.2022</span>          
+              </div>
+              <div class="description">
+                <a href="https://www.coderhouse.com/certificados/62e1fce946e4a5001992c78f">Python - Django</a>
+              </div>
+            </article>
+            
+        </section>
+        <section>
+          <h3 id="capacidades">Capacidades</h3>
+          <div class='skills'>
+            <div class='column'>
+              <h4>Habilidades que manejo</h4>
+              <ul>
+                <li>Django FrameWork</li>
+                <li>Bootstrap</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+              </ul>
+            </div>
+            <div class='column'>
+              <h4>Lenguajes de programación</h4>
+              <ul>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>Java</li>
+                <li>Ruby</li>
+              </ul>
+            </div>
+            <div class='column'>
+              <h4>Idiomas</h4>
+              <ul>
+              <li>Español - Hablante nativo</li>
+              <li>Inglés - Básico</li>
+              <li>Esperanto - Intermedio</li>
+            </ul>
+            </div>
+            <!--div class='column'>
+                <h4>Otros conocimientos</h4>
+                <ul>
+                <li>Zoom para docentes</li>
+                <li>Plataforma Moodle</li>
+                <li>Google meet para educadores</li>
+              </ul>
+              </div-->
+          </div>
+        </section>
+
+      </main>
+      <!--Un ejemplo de footer para poner créditos--> 
+      <footer>
+        <p>Creado por: L0l4 2023 </p>
+      </footer>
+
+
+</body>
+</html>
