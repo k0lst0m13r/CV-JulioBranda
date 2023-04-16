@@ -85,6 +85,10 @@ body {
   color: black;
 } 
 
+a, div a:hover {
+  color:rgb(52, 122, 56);
+}
+
 /*etilos article*/
 article {
     padding:0 1em;
