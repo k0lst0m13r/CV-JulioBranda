@@ -126,6 +126,11 @@ article {
     border-radius: 50%;
     max-width: 150px;
   }
+
+  #web{
+    text-decoration: none;
+    color: black;
+  }
   
   /*Estilos en h1 para mayúsculas*/
   h1 {
